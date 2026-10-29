@@ -71,7 +71,7 @@ Measure it in M4 with an on-screen timestamp test (film the screen with a second
 | Module | Responsibility |
 |---|---|
 | `SparEngine` (Swift package) | Pure logic port. No UIKit/AVFoundation imports. Fixture-tested. |
-| `PoseService` | Camera capture + MediaPipe + adapter → `PoseFrame` stream |
+| `PoseService` | Camera capture + MediaPipe + adapter → `PoseFrame` stream (adapter itself lives in `SparEngine`, tested on `fixtures/adapter/`) |
 | `SessionDirector` | Modes, rounds, combo calling, attack scheduling, difficulty |
 | `CoachController` | Maps events/director intents → animations, gaze, voice |
 | `CoachView` | RealityKit scene + compositing over the camera feed |

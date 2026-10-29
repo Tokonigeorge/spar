@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F95B0CB6309633835393C77 /* SparApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BC656DEB63BA9F0FB712E /* SparApp.swift */; };
+		A1CB894BBC66C6F75AD73E0E /* PipelineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EC2DF55DB7694784CF75E /* PipelineConfig.swift */; };
+		1A232BF01573487B50E0DF5D /* CameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3827FB1BA9E4BC589A34C9C5 /* CameraCapture.swift */; };
+		4DF904263D1BED83B18C642A /* PoseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E4973A40C7E8D9978C84E /* PoseService.swift */; };
+		21AFC73E175721AC9FA65092 /* BodyFramePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE783CF449488F3D28B7BE /* BodyFramePanel.swift */; };
+		8BD47E74DA30A6A71EC44146 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7F25D1E6D5B72468B2ABF7 /* CameraPreviewView.swift */; };
+		ED64182ED55C575CF5FAE033 /* DebugModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B312EAC6B0E7FB0DC8CD59 /* DebugModel.swift */; };
+		068A6C0E82185FD01E3CDADF /* DebugScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D92142FEA233C9B9028D7D /* DebugScreen.swift */; };
+		BF38D0497DD12C7F24574FF1 /* FrameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEE25AF7269C1C11C5656E /* FrameStats.swift */; };
+		80A3045DAD273F878CB3CF69 /* LeadJabCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969EA552F3ED8978B7A115A /* LeadJabCheck.swift */; };
+		3B06EC0AB33152EF94B3364B /* SkeletonOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24B9A379BA21CC596650290 /* SkeletonOverlay.swift */; };
+		77F5D497200C840FA3681C1C /* SparEngine in Frameworks */ = {isa = PBXBuildFile; productRef = C04F21F8127F21E1DCF9927B /* SparEngine */; };
+		3D4795A4CC33562F4F140825 /* MediaPipeTasksVision in Frameworks */ = {isa = PBXBuildFile; productRef = D5C6B613982B9753703BBEC6 /* MediaPipeTasksVision */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE4DFF159095389B3F3BCFC6 /* Spar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1BC656DEB63BA9F0FB712E /* SparApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparApp.swift; sourceTree = "<group>"; };
+		EE3EC2DF55DB7694784CF75E /* PipelineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineConfig.swift; sourceTree = "<group>"; };
+		3827FB1BA9E4BC589A34C9C5 /* CameraCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapture.swift; sourceTree = "<group>"; };
+		534E4973A40C7E8D9978C84E /* PoseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseService.swift; sourceTree = "<group>"; };
+		2BDE783CF449488F3D28B7BE /* BodyFramePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFramePanel.swift; sourceTree = "<group>"; };
+		CB7F25D1E6D5B72468B2ABF7 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		A6B312EAC6B0E7FB0DC8CD59 /* DebugModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugModel.swift; sourceTree = "<group>"; };
+		B2D92142FEA233C9B9028D7D /* DebugScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugScreen.swift; sourceTree = "<group>"; };
+		68DEE25AF7269C1C11C5656E /* FrameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameStats.swift; sourceTree = "<group>"; };
+		C969EA552F3ED8978B7A115A /* LeadJabCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadJabCheck.swift; sourceTree = "<group>"; };
+		E24B9A379BA21CC596650290 /* SkeletonOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonOverlay.swift; sourceTree = "<group>"; };
+		012E268EB9832BC51C1894DF /* fetch_model.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = fetch_model.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC421A1DDB28E78FC2224AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F5D497200C840FA3681C1C /* SparEngine in Frameworks */,
+				3D4795A4CC33562F4F140825 /* MediaPipeTasksVision in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9340614599AB78F485950C7 = {
+			isa = PBXGroup;
+			children = (
+				DEDF9C69617FAC5D4BCC13CE /* Spar */,
+				85ABD5009F67F716AA06490E /* scripts */,
+				2F3A6B1E78F896718625FF06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEDF9C69617FAC5D4BCC13CE /* Spar */ = {
+			isa = PBXGroup;
+			children = (
+				5E1BC656DEB63BA9F0FB712E /* SparApp.swift */,
+				EE3EC2DF55DB7694784CF75E /* PipelineConfig.swift */,
+				B7005051BB241C9D54ACB5D7 /* Pose */,
+				1ECE9BF5FD7ACAAB16AAFABD /* Debug */,
+			);
+			path = Spar;
+			sourceTree = "<group>";
+		};
+		B7005051BB241C9D54ACB5D7 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				3827FB1BA9E4BC589A34C9C5 /* CameraCapture.swift */,
+				534E4973A40C7E8D9978C84E /* PoseService.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		1ECE9BF5FD7ACAAB16AAFABD /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				2BDE783CF449488F3D28B7BE /* BodyFramePanel.swift */,
+				CB7F25D1E6D5B72468B2ABF7 /* CameraPreviewView.swift */,
+				A6B312EAC6B0E7FB0DC8CD59 /* DebugModel.swift */,
+				B2D92142FEA233C9B9028D7D /* DebugScreen.swift */,
+				68DEE25AF7269C1C11C5656E /* FrameStats.swift */,
+				C969EA552F3ED8978B7A115A /* LeadJabCheck.swift */,
+				E24B9A379BA21CC596650290 /* SkeletonOverlay.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		85ABD5009F67F716AA06490E /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				012E268EB9832BC51C1894DF /* fetch_model.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		2F3A6B1E78F896718625FF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE4DFF159095389B3F3BCFC6 /* Spar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4726BA01A11054654524954D /* Spar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7B903BF5B76A92FBB9FF44 /* Build configuration list for PBXNativeTarget "Spar" */;
+			buildPhases = (
+				303CCE6304B962FDAF287552 /* Sources */,
+				7CC421A1DDB28E78FC2224AF /* Frameworks */,
+				F964B4AC93F8CB0399137DF2 /* Resources */,
+				5FEA283755AD6B6F32245425 /* Bundle pose model */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spar;
+			packageProductDependencies = (
+				C04F21F8127F21E1DCF9927B /* SparEngine */,
+				D5C6B613982B9753703BBEC6 /* MediaPipeTasksVision */,
+			);
+			productName = Spar;
+			productReference = FE4DFF159095389B3F3BCFC6 /* Spar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4726BA01A11054654524954D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F9FBB92E94E3EF23FA14607F /* Build configuration list for PBXProject "Spar" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9340614599AB78F485950C7;
+			packageReferences = (
+				188A0D5C11B94C81ECEA04D5 /* XCLocalSwiftPackageReference "../SparEngine" */,
+				F4369768D2FCFD7117FC861F /* XCLocalSwiftPackageReference "../MediaPipeTasks" */,
+			);
+			productRefGroup = 2F3A6B1E78F896718625FF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4726BA01A11054654524954D /* Spar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F964B4AC93F8CB0399137DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FEA283755AD6B6F32245425 /* Bundle pose model */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/scripts/fetch_model.sh",
+			);
+			name = "Bundle pose model";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/pose_landmarker_full.task",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/scripts/fetch_model.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		303CCE6304B962FDAF287552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F95B0CB6309633835393C77 /* SparApp.swift in Sources */,
+				A1CB894BBC66C6F75AD73E0E /* PipelineConfig.swift in Sources */,
+				1A232BF01573487B50E0DF5D /* CameraCapture.swift in Sources */,
+				4DF904263D1BED83B18C642A /* PoseService.swift in Sources */,
+				21AFC73E175721AC9FA65092 /* BodyFramePanel.swift in Sources */,
+				8BD47E74DA30A6A71EC44146 /* CameraPreviewView.swift in Sources */,
+				ED64182ED55C575CF5FAE033 /* DebugModel.swift in Sources */,
+				068A6C0E82185FD01E3CDADF /* DebugScreen.swift in Sources */,
+				BF38D0497DD12C7F24574FF1 /* FrameStats.swift in Sources */,
+				80A3045DAD273F878CB3CF69 /* LeadJabCheck.swift in Sources */,
+				3B06EC0AB33152EF94B3364B /* SkeletonOverlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DCFB30EAE59D6917CE906371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		37CDDD61FED8A39EEA88C0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF9B2668011E455D3D7F21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Spar;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Spar watches your punches, guard and head movement through the front camera. Video stays on your phone.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = app.spar.Spar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BA0348D54C7CF6D7F19BE835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Spar;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Spar watches your punches, guard and head movement through the front camera. Video stays on your phone.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = app.spar.Spar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9FBB92E94E3EF23FA14607F /* Build configuration list for PBXProject "Spar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFB30EAE59D6917CE906371 /* Debug */,
+				37CDDD61FED8A39EEA88C0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7B903BF5B76A92FBB9FF44 /* Build configuration list for PBXNativeTarget "Spar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF9B2668011E455D3D7F21A /* Debug */,
+				BA0348D54C7CF6D7F19BE835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		188A0D5C11B94C81ECEA04D5 /* XCLocalSwiftPackageReference "../SparEngine" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../SparEngine;
+		};
+		F4369768D2FCFD7117FC861F /* XCLocalSwiftPackageReference "../MediaPipeTasks" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MediaPipeTasks;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C04F21F8127F21E1DCF9927B /* SparEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188A0D5C11B94C81ECEA04D5 /* XCLocalSwiftPackageReference "../SparEngine" */;
+			productName = SparEngine;
+		};
+		D5C6B613982B9753703BBEC6 /* MediaPipeTasksVision */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4369768D2FCFD7117FC861F /* XCLocalSwiftPackageReference "../MediaPipeTasks" */;
+			productName = MediaPipeTasksVision;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

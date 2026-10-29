@@ -28,9 +28,9 @@ You are building **Spar**, an iPhone boxing-partner app. Read these before writi
 
 ```bash
 # Reference engine
-cd reference && python tests/test_fixtures.py && python tests/test_robustness.py
+cd reference && python tests/test_fixtures.py && python tests/test_robustness.py && python tests/test_adapter.py
 
-# Swift engine (once created)
+# Swift engine
 cd ios/SparEngine && swift test
 ```
 

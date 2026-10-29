@@ -20,6 +20,13 @@ the person's anatomical side).
 **Adapter sanity check:** throw one jab with your lead hand. The engine must report
 `hand: lead, punch: jab`. If it says rear, the mirroring is wrong.
 
+The MediaPipe adapter is `reference/spar_engine/adapter.py` (Swift: `SparEngine/PoseAdapter.swift`).
+`fixtures/adapter/*.json` hold a known sequence as raw MediaPipe world landmarks from an unmirrored
+and a mirrored image; both ports must map them back exactly (`tests/test_adapter.py`, `AdapterTests`).
+The Python test also runs the result through the engine and checks the jab comes out as the lead hand,
+and that the wrong mirroring flag turns it into the rear hand. On the phone, the debug screen has
+the same check (without the engine until M3).
+
 ## Calibration
 The first `calibration_s` (1 s) of frames, standing in guard:
 - shoulder width (the unit SW)
@@ -76,6 +83,7 @@ At `t_impact`:
 
 ## Test status
 - 7 synthetic fixtures pass (`reference/tests/test_fixtures.py`)
+- MediaPipe adapter round-trips both camera setups and passes the lead-jab check (`test_adapter.py`)
 - Full move set detected exactly under 1.5 cm joint jitter, 15/15 seeds
   (`test_robustness.py`). At 2 cm, ~90%.
 - **Not yet validated on real recordings.** That is milestone M1. Expect to retune:

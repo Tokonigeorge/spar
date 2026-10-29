@@ -18,10 +18,21 @@ Each milestone has acceptance criteria. Don't move on until they're met.
 - [ ] Evaluate on BoxingVI clips (where the camera angle is comparable); record the results here
 
 ## M2 — iOS skeleton
+Code is in place; nothing below has been built or run yet (it was written without a Mac or
+Swift toolchain). Tick each box once it's verified in Xcode / on a phone. Steps: `ios/README.md`.
 - [ ] Xcode project `ios/Spar` (SwiftUI, iOS 17+), Swift package `ios/SparEngine`
+  - [x] Project, app sources, `SparEngine` adapter port + `AdapterTests`, MediaPipe via the
+        vendored official SPM manifest (`ios/MediaPipeTasks`, release 1.1.1)
+  - [ ] Builds in Xcode; `swift test` passes in `ios/SparEngine`
 - [ ] Front camera capture + MediaPipe Pose Landmarker (world landmarks) + adapter
+  - [x] Adapter moved into the reference engine (`spar_engine/adapter.py`), ported to Swift,
+        shared fixtures `fixtures/adapter/` (unmirrored + mirrored, incl. engine-level lead-jab check in Python)
+  - [ ] Skeleton lines up with the body on device
 - [ ] Debug overlay: skeleton, FPS, inference ms, body-frame axes
+  - [x] Skeleton (lead arm orange, rear cyan, L/R wrist labels), pose/camera FPS, worst 1 s FPS over 30 s,
+        inference ms, body-frame front/top plots with axes, on-screen lead-jab check
 - [ ] ≥ 25 fps sustained on iPhone 12 or newer; adapter passes the lead-jab check on device
+- [ ] Optional (ARCHITECTURE.md decision 2): compare Apple Vision `VNDetectHumanBodyPose3DRequest`. Not started
 
 ## M3 — Swift engine port
 - [ ] Port `reference/spar_engine` 1:1 (same Config defaults)

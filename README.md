@@ -20,7 +20,7 @@ Built for someone learning to box who doesn't always have a partner.
 | `reference/tools/make_fixtures.py` | Generates synthetic boxing sequences + expected events | ✅ |
 | `reference/tools/analyze_video.py` | Runs a recorded video through MediaPipe → engine, for tuning | ✅ (needs the model file) |
 | `fixtures/*.json` | Shared test data. The Swift engine must pass these too | ✅ |
-| `ios/` | iOS app + Swift engine port | ⏳ to build (see ROADMAP) |
+| `ios/` | iOS app (`Spar/`, M2 debug screen), Swift engine package (`SparEngine/`), MediaPipe package (`MediaPipeTasks/`) | ⏳ M2 written, not yet built on a Mac |
 
 ## Quick start (reference engine)
 
@@ -29,6 +29,7 @@ cd reference
 python tools/make_fixtures.py        # regenerate fixtures (only if you change the generator)
 python tests/test_fixtures.py        # 7 scenarios: punches, combos, defence, guard, coach attacks
 python tests/test_robustness.py      # same move set under 1.5 cm pose jitter, 15 seeds
+python tests/test_adapter.py         # MediaPipe -> body frame adapter + lead-jab check
 ```
 
 Analyse your own recording (see the docstring for the model download):
