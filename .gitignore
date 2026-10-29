@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.task
+*.mp4
+*.mov
+.DS_Store
+xcuserdata/
+DerivedData/
+.build/
